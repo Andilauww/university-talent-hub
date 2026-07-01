@@ -1,0 +1,4 @@
+
+ALTER TABLE public.skills ADD COLUMN IF NOT EXISTS reason TEXT;
+ALTER TABLE public.certificates ADD COLUMN IF NOT EXISTS reason TEXT;
+ALTER TABLE public.portfolio ADD COLUMN IF NOT EXISTS reason TEXT;
