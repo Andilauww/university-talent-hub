@@ -1,0 +1,16 @@
+node_modules
+.output
+.temp
+.github
+.git
+.lovable
+.tanstack
+*.log
+dist
+build
+.env
+.env.*
+!.env.example
+README.md
+docker-compose.yml
+Dockerfile
