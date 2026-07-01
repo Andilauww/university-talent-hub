@@ -41,6 +41,7 @@ function getTypeConfig(type: string) {
 }
 
 function RecommendationsPage() {
+  console.log("AI Recommendations UI Loaded");
   const { session, profile } = useAuth();
   const uid = session?.user.id;
   const queryClient = useQueryClient();
