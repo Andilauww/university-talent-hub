@@ -58,14 +58,14 @@ function StudentDashboard() {
       </div>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2 rounded-2xl border border-border bg-card shadow-card">
-          <div className="border-b border-border px-6 py-4">
+        <div className="lg:col-span-2 rounded-2xl border border-border bg-card shadow-card overflow-hidden">
+          <div className="border-b border-border px-4 py-4 sm:px-6">
             <h2 className="text-lg font-bold text-foreground">Recent Submissions</h2>
           </div>
           {data && data.recent.length ? (
             <ul className="divide-y divide-border">
               {data.recent.map((r: any, i) => (
-                <li key={i} className="flex items-center gap-4 px-6 py-3.5">
+                <li key={i} className="flex items-center gap-3 px-4 py-3.5 sm:gap-4 sm:px-6">
                   <div className="grid h-9 w-9 place-items-center rounded-xl bg-accent text-accent-foreground text-xs font-bold">
                     {r.kind[0]}
                   </div>
