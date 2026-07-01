@@ -84,7 +84,7 @@ function StudentDashboard() {
 
         <Link
           to="/app/recommendations"
-          className="group flex flex-col justify-between rounded-2xl bg-gradient-primary p-6 text-primary-foreground shadow-soft transition-transform hover:-translate-y-1"
+          className="group flex h-fit flex-col justify-between rounded-2xl bg-gradient-primary p-6 text-primary-foreground shadow-soft transition-transform hover:-translate-y-1"
         >
           <Sparkles className="h-8 w-8" />
           <div>
