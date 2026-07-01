@@ -171,28 +171,7 @@ function AuthPage() {
               />
             </div>
 
-            {mode === "signup" && (
-              <div className="space-y-2">
-                <Label>I am a</Label>
-                <div className="grid grid-cols-2 gap-3">
-                  {(["student", "admin"] as AppRole[]).map((r) => (
-                    <button
-                      key={r}
-                      type="button"
-                      onClick={() => setSignupRole(r)}
-                      className={cn(
-                        "rounded-xl border px-4 py-3 text-sm font-semibold capitalize transition-all",
-                        signupRole === r
-                          ? "border-primary bg-accent text-accent-foreground"
-                          : "border-border text-muted-foreground hover:border-primary/40",
-                      )}
-                    >
-                      {r === "admin" ? "Administrator" : "Student"}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
+
 
             <Button
               type="submit"
